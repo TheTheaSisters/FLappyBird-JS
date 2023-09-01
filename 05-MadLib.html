@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MadLib</title>
+</head>
+<body>
+  <h1 style= "color: aquamarine; text-align:center;">MadLib</h1>
+<label for="">
+  Enter a name: <br>
+    <input type="text" id="name1"> <br>
+</label>  <br>
+
+<label for="">
+  Enter another name: <br>
+    <input type="text" id="name2"> <br>
+</label> <br>
+  
+<label for="">
+  Enter a planet: <br>
+    <input type="text" id="planet"> <br>
+</label> <br>
+
+<label for="">
+  Enter a thing: <br>
+    <input type="text" id="thing"> <br>
+</label> <br>
+
+<label for="">
+  Enter a vehicle: <br>
+    <input type="text" id="vehicle"> <br>
+</label> <br>
+
+<label for="">
+  Enter a verb ending with ing: <br>
+    <input type="text" id="verb"> <br>
+</label> <br>
+
+<label for="">
+  Enter an animal: <br>
+    <input type="text" id="animal"> <br>
+</label> <br>
+
+<label for="">
+  Enter an adjective: <br>
+    <input type="text" id="adjective"> <br>
+</label> <br>
+
+<label for="">
+  Enter a place: <br>
+    <input type="text" id="place"> <br>
+</label> <br>
+
+<button id="myBtn">
+  Submit
+</button>
+
+<p style="width: 400px">
+  <span id="myName1"></span> and <span id="myName2"></span> went to <span id="myName3"></span> in search of <span id="myName4"></span>. They travelled on their <span id="myName5"></span>. Once they reached, they started <span id="myName6"></span> everywhere. Suddenly they were stopped by a <span id="myName7"></span>. It was so <span id="myName8"></span> that they decided to bring it back to <span id="myName9"></span>.
+
+</p>
+
+
+<script>
+  function madLibGen() {
+    myName1.textContent = name1.value;
+    myName2.textContent = name2.value;
+    myName3.textContent = planet.value;
+    myName4.textContent = thing.value;
+    myName5.textContent = vehicle.value;
+    myName6.textContent = verb.value;
+    myName7.textContent = animal.value;
+    myName8.textContent = adjective.value;
+    myName9.textContent = place.value;
+  }
+
+  myBtn.onclick = madLibGen
+</script>
+
+</body>
+</html>

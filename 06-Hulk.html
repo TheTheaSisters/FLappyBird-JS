@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hulk</title>
+</head>
+<body>
+  <h1 id="myHeader">My name is Bruce Banner </h1>
+  <label for="">
+    Gamma Radiation:
+    <input type="range" min="400" max="600" value="400" id="gamma"> <br>
+  </label>
+  <img src="https://classwork-notebook.sanketana.repl.co/images/bruce.png" alt="" id="myImage">
+
+<script>
+  function sizeChanger() {
+    myHeader.textContent = "No, I am THE HULK!";
+    myImage.src = "https://classwork-notebook.sanketana.repl.co/images/hulk.png";
+    myImage.style.height = gamma.value + 'px';
+  }
+  gamma.onchange = sizeChanger;
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Temperature Converter</h1>
+  <p>Insert a number into one of the input fields below:
+</p>
+<label for="">
+  <input type="text" id="C"> 
+  Degrees Celcius
+</label> <br> <br>
+
+<label for="">
+  <input type="text" id="F">
+  Degrees Fahrenheit
+</label>
+
+<p>Note that the<b> Math.round() </b> method is used, so that the result will be returned as an integer.
+</p>
+
+<script>
+
+  function convert(degree)  {
+    var x;
+      if (degree == "C") {
+        x = C * 9 / 5 + 32;
+        F.value = x;
+      } else {
+        x = (F - 32) * 5 / 9;
+        C.value = x;
+      }
+  }
+
+  C.onkeyup = convert('C');
+  F.onkeyup = convert('F');
+
+</script>
+
+</body>
+</html>

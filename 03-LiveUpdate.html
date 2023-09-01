@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Update</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="https://miro.medium.com/max/1400/1*YWVxqyJjpz_B4cNVOxklbA.png
+" alt="">
+<h2>The Real Name of Spider Man Is
+  <span id="caption">...</span>
+</h2>
+  
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Spiderman.JPG/800px-Spiderman.JPG
+" alt=""> <br>
+<input type="text" name="" id="myInput">
+
+<script>
+  function liveUpdator() {
+    caption.textContent = myInput.value;
+  }
+
+  myInput.oninput = liveUpdator;
+</script>
+
+</body>
+</html>
